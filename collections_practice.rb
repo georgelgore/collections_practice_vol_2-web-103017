@@ -76,6 +76,6 @@ def organize_schools(schools)
   locations.uniq!
 
   locations.each do |place|
-    hash[plae] = []
+    hash[place] = []
   end
 end
