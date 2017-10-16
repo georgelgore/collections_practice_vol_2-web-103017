@@ -79,5 +79,13 @@ def organize_schools(schools)
     hash[place] = []
   end
 
+
+
+  schools.each do |school, info_hash|
+    info_hash.each do |location_key, location|
+      hash[location] << school
+    end
+  end
+
   hash
 end
