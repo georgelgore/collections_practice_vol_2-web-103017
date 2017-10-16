@@ -52,5 +52,13 @@ def merge_data(keys, data)
   end
 
 def find_cool(array)
-
+  output = []
+  array.each do |hash|
+    hash.each do |k,v|
+      if v == "cool"
+        output << hash
+      end
+    end
+  end
+  output
 end
