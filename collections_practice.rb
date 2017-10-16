@@ -78,4 +78,6 @@ def organize_schools(schools)
   locations.each do |place|
     hash[place] = []
   end
+
+  hash
 end
