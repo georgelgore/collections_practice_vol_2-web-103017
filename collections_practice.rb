@@ -64,5 +64,14 @@ def find_cool(array)
 end
 
 def organize_schools(schools)
+  hash = {}
+  locations = []
 
+  schools.each do |school, info_hash|
+    info_hash.each do |location_key, location|
+      locations << location
+    end
+  end
+
+  locations.uniq
 end
